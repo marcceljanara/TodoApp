@@ -7,5 +7,7 @@
         public string Email { get; set; } = null!;
         public string Password { get; set; } = null!;
         public DateTime Created_At { get; set; }
+
+        public ICollection<Category> Categories { get; set; } = new List<Category>();
     }
 }
